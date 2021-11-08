@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HospitalRunV1">
+    <test name="HealthcareApp Test">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.hr.HR21_ValidateDoctorSeePatientReportsOfSelectedDates_Test" />
+            <class name="com.hr.HR007_GeneralTest_Test"/>
+        </classes>
+    </test>
+</suite>
