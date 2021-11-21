@@ -4,16 +4,13 @@ import com.hr.pages.HomePage;
 import com.hr.pages.PatientReportsPage;
 import com.hr.testBase.TestBase;
 import com.hr.testUtils.TestUtilities;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 
@@ -33,7 +30,7 @@ public class HR21_ValidateDoctorSeePatientReportsOfSelectedDates_Test extends Te
 
     @Test
     public void validateDoctorSeePatientReportsOfSelectedDates(){
-        extentReports.startTest("Start Test :: HR21 - Validate doctor see patient reports of selected dates");
+        extentTest = extentReports.startTest("Start Test :: HR21 - Validate doctor see patient reports of selected dates");
         homePage = new HomePage();
         homePage.clickOnPatientsTab();
 
@@ -51,7 +48,7 @@ public class HR21_ValidateDoctorSeePatientReportsOfSelectedDates_Test extends Te
 
     @Test
     public void test() {
-        extentReports.startTest("Start Test :: HR21 - Validate doctor see patient reports of selected dates");
+        extentTest = extentReports.startTest("Start Test :: HR21 - Validate doctor see patient reports of selected dates");
         System.out.println("Inside test 2");
     }
 
@@ -59,11 +56,11 @@ public class HR21_ValidateDoctorSeePatientReportsOfSelectedDates_Test extends Te
     public void testTearDown(ITestResult result) throws IOException, InterruptedException {
         if (result.getStatus() == ITestResult.FAILURE) {
             TestUtilities.takeScreenshot(result.getName());
-            Reporter.log("Test Failed");
+            extentTest.log(LogStatus.FAIL,"Test Failed");
         } else if (result.getStatus() == ITestResult.SUCCESS) {
-            Reporter.log("Test Passed");
+            extentTest.log(LogStatus.PASS,"Test Passed");
         } else if (result.getStatus() == ITestResult.SKIP) {
-            Reporter.log("Test Skipped");
+            extentTest.log(LogStatus.SKIP,"Test Skipped");
         }
         TestUtilities.logOutOfHospitalRun();
         extentReports.endTest(extentTest);
