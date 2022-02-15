@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="GobiboTests" duration-ms="40167" started-at="2022-02-15T16:39:26 IST" finished-at="2022-02-15T16:40:06 IST">
+    <groups>
+    </groups>
+    <test name="GobiboApp Test" duration-ms="40167" started-at="2022-02-15T16:39:26 IST" finished-at="2022-02-15T16:40:06 IST">
+      <class name="com.gobibo.TC1_ValidateTicketBooking_Test">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.gobibo.TC1_ValidateTicketBooking_Test@1060b431]" name="startReport" is-config="true" duration-ms="107" started-at="2022-02-15T16:39:26 IST" finished-at="2022-02-15T16:39:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="validateTicketBooking_TC1()[pri:0, instance:com.gobibo.TC1_ValidateTicketBooking_Test@1060b431]" name="validateTicketBooking_TC1" duration-ms="40122" started-at="2022-02-15T16:39:26 IST" finished-at="2022-02-15T16:40:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTicketBooking_TC1 -->
+        <test-method status="PASS" signature="testTearDown(org.testng.ITestResult)[pri:0, instance:com.gobibo.TC1_ValidateTicketBooking_Test@1060b431]" name="testTearDown" is-config="true" duration-ms="10" started-at="2022-02-15T16:40:06 IST" finished-at="2022-02-15T16:40:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTicketBooking_TC1 status=SUCCESS method=TC1_ValidateTicketBooking_Test.validateTicketBooking_TC1()[pri:0, instance:com.gobibo.TC1_ValidateTicketBooking_Test@1060b431] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="extentClose()[pri:0, instance:com.gobibo.TC1_ValidateTicketBooking_Test@1060b431]" name="extentClose" is-config="true" duration-ms="419" started-at="2022-02-15T16:40:06 IST" finished-at="2022-02-15T16:40:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentClose -->
+      </class> <!-- com.gobibo.TC1_ValidateTicketBooking_Test -->
+    </test> <!-- GobiboApp Test -->
+  </suite> <!-- GobiboTests -->
+</testng-results>
